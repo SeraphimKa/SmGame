@@ -1,0 +1,7 @@
+/* basics */
+@import "./base.css";
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
