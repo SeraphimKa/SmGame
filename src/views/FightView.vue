@@ -17,7 +17,7 @@ const monster = {
 <template>
     <div class="fight flex flex-col">
         <div class="fight-screen">
-            <div class="monster absolute bottom-32 left-32">
+            <div class="monster absolute top-32 left-32">
                 <div class="hp-bar">
                     <div class="hp-num">100/100
                     </div>
@@ -100,7 +100,6 @@ const monster = {
     line-height: var(--ht);
     border-radius: 50px;
     text-align: center;
-
 }
 
 .ctrl-btn:hover {
