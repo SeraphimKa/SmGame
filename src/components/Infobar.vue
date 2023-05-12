@@ -3,12 +3,13 @@
 </script>
 
 <template>
-    <div class="infobar bg-gradient-to-b from-yellow-500 to-red-600 text-black text-4xl flex justify-around items-center">
-        <div class="info1">info1</div>
-        <div class="info2">info2</div>
-        <div class="info3">info3</div>
-        <div class="info4">info4</div>
-        <div class="info5">info5</div>
+    <div
+        class="infobar bg-gradient-to-b from-yellow-500 to-red-600 text-black text-4xl grid grid-cols-5 grid-rows-1 p-4 gap-4 justify-around items-center">
+        <div class="info1 ">Level: 15</div>
+        <div class="info2">XP: 100/5000</div>
+        <div class="info3"></div>
+        <div class="info4"></div>
+        <div class="info5">Gold: 30</div>
     </div>
 </template>
 

@@ -1,5 +1,7 @@
 
 <script setup>
+import FightControls from '../components/fightview/FightControls.vue';
+
 const monster = {
     name: 'mon',
     type: 'fire',
@@ -16,35 +18,25 @@ const monster = {
 
 <template>
     <div class="fight flex flex-col">
-        <div class="fight-screen">
-            <div class="monster absolute top-32 left-32">
+        <div class="fight-screen flex-grow">
+            <div class="monster absolute left-1/4 bottom-1/4">
                 <div class="hp-bar">
                     <div class="hp-num">100/100
                     </div>
                     <div class="hp"></div>
                 </div>
-                <div class="monster-img bg-red-600 h-20 w-20"></div>
+                <div class="monster-img bg-red-600 h-20 w-20 rounded-md"></div>
             </div>
-            <div class="monster absolute top-32 right-32">
+            <div class="monster absolute top-1/4 right-1/4">
                 <div class="hp-bar">
                     <div class="hp-num">100/100
                     </div>
                     <div class="hp"></div>
                 </div>
-                <div class="monster-img bg-blue-600 h-20 w-20"></div>
+                <div class="monster-img bg-blue-600 h-20 w-20 rounded-md"></div>
             </div>
         </div>
-        <div
-            class="fight-controls flex flex-col absolute bottom-0 left-0 right-0 h-48 bg-cyan-700 text-orange-400 text-4xl justify-around">
-            <div class="fight-controls-top flex justify-around">
-                <div class="fight-controls-fight ctrl-btn">Fight</div>
-                <div class="fight-controls-wait ctrl-btn">Wait</div>
-            </div>
-            <div class="fight-controls-bottom flex justify-around">
-                <div class="fight-controls-items ctrl-btn">Items</div>
-                <div class="fight-controls-run ctrl-btn">Run</div>
-            </div>
-        </div>
+        <FightControls></FightControls>
     </div>
 </template>
 
@@ -60,6 +52,7 @@ const monster = {
     outline: 1px solid white;
     margin-bottom: 1px;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 
 .hp-num {
@@ -80,29 +73,5 @@ const monster = {
     background-color: red;
     border-radius: 50px;
     text-align: center;
-}
-
-
-/* fight controls */
-.fight-controls {
-    margin: 10px;
-    box-shadow: 0 0 10px 10px rgb(15, 70, 83);
-    border: 5px solid rgb(39, 117, 134);
-    border-radius: 4px;
-}
-
-.ctrl-btn {
-    cursor: pointer;
-    background-image: linear-gradient(to right, #fe4f4f 0%, #000000 100%);
-    width: 300px;
-    --ht: 65px;
-    height: var(--ht);
-    line-height: var(--ht);
-    border-radius: 50px;
-    text-align: center;
-}
-
-.ctrl-btn:hover {
-    background-image: linear-gradient(to right, #6cfe4f 0%, #000000 100%);
 }
 </style>

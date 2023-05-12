@@ -1,0 +1,40 @@
+{
+  "types": [
+    "normal",
+    "grass",
+    "fire",
+    "water",
+    "electric",
+    "ice",
+    "fighting",
+    "poison",
+    "ground",
+    "flying",
+    "psychic",
+    "bug",
+    "rock",
+    "ghost",
+    "dragon",
+    "dark",
+    "steel"
+  ],
+  "typeColors": [
+    "ivory",
+    "forestgreen",
+    "red",
+    "dodgerblue",
+    "yellow",
+    "cyan",
+    "firebrick",
+    "indigo",
+    "brown",
+    "cyan",
+    "magenta",
+    "lawngreen",
+    "slategray",
+    "fuchsia",
+    "navy",
+    "dimgray",
+    "olivedrab"
+  ]
+}

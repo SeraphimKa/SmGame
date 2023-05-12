@@ -8,7 +8,7 @@ const product = defineProps(['product'])
     <div class="product bg-red-800 w-3/12 h-48 p-5 text-center flex flex-col rounded-md">
         <!-- <img :src="product.product.image" :alt="product.product.name" /> -->
         <h1 class="title text-black text-2xl font-semibold">{{ product.product.name }}</h1>
-        <div class="body flex-grow flex flex-col">
+        <div class="body flex-grow flex flex-col bg-black bg-opacity-25 rounded-md px-5">
             <p class="desc text-gray-400 flex-grow">{{ product.product.desc }}</p>
             <p class="price text-yellow-300 font-semibold text-end">{{ product.product.price }} Lions</p>
         </div>
